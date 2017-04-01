@@ -20,7 +20,8 @@ public class BrowserFactory {
 
     public static void openBrowser() throws MalformedURLException {
         ChromeDriverManager.getInstance().setup();
-
+        
+//below mentioned two lines for grid
         //DesiredCapabilities capabilities = DesiredCapabilities.chrome();
         //driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 
@@ -37,6 +38,8 @@ public class BrowserFactory {
     }
 
     public static void takeScreenShot(Scenario scenario) {
+        //you can use below mentions code for screenShot
+        //you can use below mentions code for screenShot
 
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
