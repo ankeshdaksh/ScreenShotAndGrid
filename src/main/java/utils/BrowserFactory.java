@@ -37,6 +37,7 @@ public class BrowserFactory {
     }
 
     public static void takeScreenShot(Scenario scenario) {
+        //use these two code for screenshot
 
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
